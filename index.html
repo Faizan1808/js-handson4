@@ -64,6 +64,26 @@
     </pre>
 
     <h2>Q4. Even Odd?</h2>
+    <pre>
+        Ans.   const findEvenOdd = (N, Arr) => 
+        {
+            let A = [2];
+            let evensum = 0;
+            let oddsum = 0;
+            for(let i=0; i < N; i++){
+              if(Arr[i] % 2 === 0){
+                evensum += Arr[i];
+              }
+              else{
+                oddsum += Arr[i];
+              }
+            }
+            
+            A[0] = evensum;
+            A[1] = oddsum;
+            return A;
+        };
+    </pre>
 
     <h2>Q5. Find whether the number is present or not?</h2>
     <pre>
